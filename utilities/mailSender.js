@@ -1,6 +1,6 @@
 "use strict";
 const nodemailer = require("nodemailer");
-const secrets = require("../secrets");
+const secrets = process.env || require("../secrets");
 // async..await is not allowed in global scope, must use a wrapper
 async function mailSender(email,token) { // token is otp
 

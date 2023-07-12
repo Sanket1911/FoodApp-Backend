@@ -1,6 +1,6 @@
 const FoodUserModel = require("../model/userModel");
 const jwt = require("jsonwebtoken");
-const secrets = require("../secrets");
+const secrets = process.env || require("../secrets");
 const mailSender = require("../utilities/mailSender");
 // *********************Controller Functions*********************
 async function signupController(req, res) {

@@ -15,9 +15,9 @@ password
  
 //  * connect to my app -> promise based
 const mongoose = require('mongoose');
-const secrets = require("../secrets");
+const DB_LINK = process.env.DB_LINK || require("../secrets").DB_LINK;
 
-let dblink = secrets.DB_LINK;
+let dblink = DB_LINK;
 
 mongoose
 .connect(dblink)
