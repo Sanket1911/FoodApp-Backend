@@ -1,0 +1,31 @@
+** Rules
+
+1) start every route with "/api"
+
+2) the route should have it's version append after "/api"  (for backward compatibility)
+    eg: /api/v1/user
+
+3) routes are nouns and methods are verbs
+    route -> /getUser -> bad practice
+    route -> /user -> good practice
+
+4) Use get/post/patch/delete method for doing an action and route to represent "Entities" (user,auth(derived),plan,booking(derived),review(derived))
+
+5) Appropriate status code
+
+
+MVC
+
+*M -> Business model
+       1. here we define our schema and database related things
+       2. Model should be think (max logic should be here)
+
+*C -> Executer functions
+      1. They are engineering logic to map request with Business model
+      2. Controller should be things
+      3. Controller functions
+
+
+
+
+
